@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./images/mainlogo4.png" />
     <title>CaPriz_elit Store</title>
     <link rel="stylesheet" href="./styels/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     
 </head>
 <body>
+
+
+    <!-- <div class="shopping_cart" id="open_shopping_cart">
+        <img class="cart" id="cart" src="./images/shopping_cart.png" alt="">
+        <div class="cart__num" id="cart_num">0</div>
+    </div> -->
+
+
+
     <header class="header">
         <div class="container">
         <div class="header_body">
@@ -21,10 +32,11 @@
             </div>
 
             <nav class="header_menu">
-            <a href="#" class="menu_link-active">На главную</a>
-            <a href="#" class="menu_link">О нас</a>
-            <a href="#" class="menu_link">Отзывы</a>
-            <a href="#" class="menu_link">Контакты</a>
+            <a href="#Home" class="menu_link-active">На главную</a>
+            <a href="#Delivery_aboutus" class="menu_link">О нас</a>
+            <a href="#catalog_id" class="menu_link">Каталог</a>
+            <a href="#Testimonials" class="menu_link">Отзывы</a>
+            <a href="#contact" class="menu_link">Контакты</a>
             </nav>
         </div>
 
@@ -32,10 +44,10 @@
 
         </div>
     </header>
+    
+    
 
-
-
-    <section class="welcome" > 
+    <section class="welcome" id="Home"> 
         <img 
             data-aos="fade-right"
             data-aos-duration="2000" 
@@ -46,7 +58,7 @@
             data-aos="fade-left" 
             data-aos-duration="2000" 
             class="particle particle--right"
-            src="/images/Polygon 2.png" 
+            src="./images/Polygon 2.png" 
             alt="" /> 
         <div class="container"> 
             <div class="welcome_inner" data-aos="fade-down" data-aos-duration="2000"> 
@@ -56,8 +68,728 @@
                         <a href="https://wa.me/+77717743260" class="btn">Свяжитесь с нами </a>
                     </div> 
                 </div> 
-            </div> 
+             
         </section>
+
+        
+        
+        
+        
+        
+        <section class="Delivery_aboutus_information" id="Delivery_aboutus">
+            <div class="container">
+            <h1>Информация о Доставке</h1>
+            <p>Мы находимся в городе Костанай. Доставка по городу - бесплатно. <br> С примеркой - 1000тг. Вы можете самостоятельно забрать покупку <br> из точки самовывоза или заказать доставку курьером по Костанаю. <br> Также доступна доставка почтой <br> по всему Казахстану.</p>
+
+            <h1>Немного о нас</h1>
+            <p>Мы бренд одежды "capriz_elit" <br>
+                • Высокое качество по доступной цене <br>
+                • Сочетаем стиль и комфорт <br>
+                • Только в розницу <br>
+                • В наличии и под заказ</p>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <section class="ctalog">
+            <div class="container">
+              <h1 class="catalog_title">Каталог</h1>
+              <div class="products">
+              <div class="product" data-price="35000" data-image="./images/medbluzwhite 1.png">
+                <div class="product_head">
+                <div aria-label="Newest Photos">
+                  <div class="carousel" data-carousel>
+                      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                      <ul data-slides>
+                          <li data-active class="slide">
+                          <a href="#" class="card__image"><img src="./images/medbluzwhite 1.png" alt=""/></a>
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz1 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz33 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz5 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz6 1.png" alt="">
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+                </div>
+                <div class="product_body">
+                <h2>Медицинская блузка</h2>
+                <p class="product_price">Цена: 35 000₸</p>
+                <p class="product_description">Ткань : Mone (80% Терилен 18% Район 2% Спандекс)</p>
+                <label for="size1">Размер:</label>
+                <select class="size_btn" id="size1">
+                  <option value="size">Выбрать размер</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                </select>
+                <button class="addToCart_btn" onclick="addToCart(1)">Добавить в корзину</button>
+              </div>
+              </div>
+          
+          
+              <div class="product" data-price="35000" data-image="./images/med_melodia 1.png">
+                <div class="product_head">
+                <div aria-label="Newest Photos">
+                  <div class="carousel" data-carousel>
+                      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                      <ul data-slides>
+                          <li data-active class="slide">
+                          <a href="#" class="card__image"><img src="./images/med_melodia 1.png" alt=""/></a>
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz1 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz33 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz5 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz6 1.png" alt="">
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+                <div class="product_body">
+                <h2>Костюм мелодия</h2>
+                <p class="product_price">Цена: 35 000₸</p>
+                <p class="product_description">Ткань : Mone (80% Терилен 18% Район 2% Спандекс)</p>
+                <label for="size2">Размер:</label>
+                <select class="size_btn" id="size2">
+                  <option value="size">Выбрать размер</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                </select>
+                <button class="addToCart_btn" onclick="addToCart(2)">Добавить в корзину</button>
+              </div>
+              </div>
+          
+          
+              <div class="product" data-price="35000" data-image="./images/med_CHERIKO2 1.png">
+                <div class="product_head">
+                
+                <div aria-label="Newest Photos">
+                  <div class="carousel" data-carousel>
+                      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                      <ul data-slides>
+                          <li data-active class="slide">
+                          <a href="#" class="card__image"><img src="./images/med_CHERIKO2 1.png" alt=""/></a>
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz1 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz33 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz5 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz6 1.png" alt="">
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+                <div class="product_body">
+                <h2>Блузка CHERIKO</h2>
+                <p class="product_price">Цена: 35 000₸</p>
+                <p class="product_description">Ткань : Mone (80% Терилен 18% Район 2% Спандекс)</p>
+                <label for="size3">Размер:</label>
+                <select class="size_btn" id="size3">
+                  <option value="size">Выбрать размер</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                </select>
+                <button class="addToCart_btn" onclick="addToCart(3)">Добавить в корзину</button>
+              </div>
+              </div>
+          
+          
+              <div class="product" data-price="35000" data-image="./images/med_CHERIKO 1.png">
+                <div class="product_head">
+                
+                <div aria-label="Newest Photos">
+                  <div class="carousel" data-carousel>
+                      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                      <ul data-slides>
+                          <li data-active class="slide">
+                          <a href="#" class="card__image"><img src="./images/med_CHERIKO 1.png" alt=""/></a>
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz1 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz33 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz5 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz6 1.png" alt="">
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+                <div class="product_body">
+                <h2>Брюки CHERIKO</h2>
+                <p class="product_price">Цена: 35 000₸</p>
+                <p class="product_description">Ткань : Mone (80% Терилен 18% Район 2% Спандекс)</p>
+                <label for="size4">Размер:</label>
+                <select class="size_btn" id="size4">
+                  <option value="size">Выбрать размер</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                </select>
+                <button class="addToCart_btn" onclick="addToCart(4)">Добавить в корзину</button>
+              </div>
+              </div>
+          
+          
+              <div class="product" data-price="35000" data-image="./images/medicgreen 1.png">
+                <div class="product_head">
+                <div aria-label="Newest Photos">
+                  <div class="carousel" data-carousel>
+                      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                      <ul data-slides>
+                          <li data-active class="slide">
+                          <a href="#" class="card__image"><img src="./images/medicgreen 1.png" alt=""/></a>
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz1 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz33 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz5 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz6 1.png" alt="">
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+                <div class="product_body">
+                <h2>Медицинская блузка</h2>
+                <p class="product_price">Цена: 35 000₸</p>
+                <p class="product_description">Ткань : Mone (80% Терилен 18% Район 2% Спандекс)</p>
+                <label for="size5">Размер:</label>
+                <select class="size_btn" id="size5">
+                  <option value="size">Выбрать размер</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                </select>
+                <button class="addToCart_btn" onclick="addToCart(5)">Добавить в корзину</button>
+              </div>
+              </div>
+          
+          
+              <div class="product" data-price="35000" data-image="./images/med_mn 1.png">
+                <div class="product_head">
+                
+                <div aria-label="Newest Photos">
+                  <div class="carousel" data-carousel>
+                      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                      <ul data-slides>
+                          <li data-active class="slide">
+                          <a href="#" class="card__image"><img src="./images/med_mn 1.png" alt=""/></a>
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz1 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz33 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz5 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz6 1.png" alt="">
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+                <div class="product_body">
+                <h2>Медицинский костюм</h2>
+                <p class="product_price">Цена: 35 000₸</p>
+                <p class="product_description">Ткань : Mone (80% Терилен 18% Район 2% Спандекс)</p>
+                <label for="size6">Размер:</label>
+                <select class="size_btn" id="size6">
+                  <option value="size">Выбрать размер</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                </select>
+                <button class="addToCart_btn" onclick="addToCart(6)">Добавить в корзину</button>
+              </div>
+              </div>
+          
+          
+              <div class="product" data-price="35000" data-image="./images/medicman 1.png">
+                <div class="product_head">
+                
+                <div aria-label="Newest Photos">
+                  <div class="carousel" data-carousel>
+                      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                      <ul data-slides>
+                          <li data-active class="slide">
+                          <a href="#" class="card__image"><img src="./images/medicman 1.png" alt=""/></a>
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz1 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz33 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz5 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz6 1.png" alt="">
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+                <div class="product_body">
+                <h2>Медицинский костюм</h2>
+                <p class="product_price">Цена: 35 000₸</p>
+                <p class="product_description">Ткань : Mone (80% Терилен 18% Район 2% Спандекс)</p>
+                <label for="size7">Размер:</label>
+                <select class="size_btn" id="size7">
+                  <option value="size">Выбрать размер</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                </select>
+                <button class="addToCart_btn" onclick="addToCart(7)">Добавить в корзину</button>
+              </div>
+              </div>
+          
+          
+              <div class="product" data-price="35000" data-image="./images/medstreich 1.png">
+                <div class="product_head">
+                
+                <div aria-label="Newest Photos">
+                  <div class="carousel" data-carousel>
+                      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                      <ul data-slides>
+                          <li data-active class="slide">
+                          <a href="#" class="card__image"><img src="./images/medstreich 1.png" alt=""/></a>
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz1 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz33 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz5 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz6 1.png" alt="">
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+                <div class="product_body">
+                <h2>Медицинская блузка</h2>
+                <p class="product_price">Цена: 35 000₸</p>
+                <p class="product_description">Ткань : Mone (80% Терилен 18% Район 2% Спандекс)</p>
+                <label for="size8">Размер:</label>
+                <select class="size_btn" id="size8">
+                  <option value="size">Выбрать размер</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                </select>
+                <button class="addToCart_btn" onclick="addToCart(8)">Добавить в корзину</button>
+              </div>
+              </div>
+          
+          
+              <div class="product" data-price="35000" data-image="./images/med_rubaska 1.png">
+                <div class="product_head">
+                
+                <div aria-label="Newest Photos">
+                  <div class="carousel" data-carousel>
+                      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                      <ul data-slides>
+                          <li data-active class="slide">
+                          <a href="#" class="card__image"><img src="./images/med_rubaska 1.png" alt=""/></a>
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz1 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz33 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz5 1.png" alt="">
+                          </li>
+                          <li class="slide">
+                              <img class="catalog_img" src="images/med_bluz6 1.png" alt="">
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+                <div class="product_body">
+                <h2>Медицинская рубашка</h2>
+                <p class="product_price">Цена: 35 000₸</p>
+                <p class="product_description">Ткань : Mone (80% Терилен 18% Район 2% Спандекс)</p>
+                <label for="size9">Размер:</label>
+                <select class="size_btn" id="size9">
+                  <option value="size">Выбрать размер</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                </select>
+                <button class="addToCart_btn" onclick="addToCart(9)">Добавить в корзину</button>
+              </div>
+              </div>
+              
+              
+            </div>
+            </div>
+          </section> 
+          
+          
+          
+            <div class="cart" id="cart">
+              <div class="cart_container">
+                <div class="cart_top"> 
+                  <h1>Ваша корзина</h1>
+                  <button class="cart_close" id="cart_close">&#10006;</button>
+                </div>
+                <br>
+                <hr>
+                <br>
+              <!-- <h2>Корзина (<span id="cart-count">0</span> товаров)</h2> -->
+              <ul class="cart-items" id="cart-items">
+                <!-- Сюда будут добавляться товары -->
+              </ul>
+              <hr id="hr-in-cart">
+              <br>  
+              <p id="cart-total">Итого: 0₸</p>
+          
+              <form class="checkout_form" id="" action="">
+                <h1 class="form_h1">Оформление заказа</h1>  
+                  
+                <div class="checkout_inner">
+                  
+                <div class="input-field">
+                <label for="name">Имя</label>
+                <input class="form_input" name="name" required=""  type="text" autocomplete="off">
+                
+                <label for="phone">Телефон</label>
+                <input class="form_input" name="phone" required="" autocomplete="off">
+                
+                <label for="city">Город</label>
+                <input class="form_input" name="city" required=""  type="text" autocomplete="off">
+                
+                <label for="address">Адрес</label>
+                <input class="form_input" name="address" required=""  type="text" autocomplete="off">
+                
+                <!-- <select name="delivery" id="">
+                <option value="">Выберите вид доставки</option>
+                <option value="">Самовывоз</option>
+                <option value="">Доставка по городу(Костанай)</option>
+                <option value="">Доставка по Казахстану</option>
+                </select> -->
+                </div>
+                <button class="button_submit">Заказать</button>
+                </div>
+            </form>
+            </div>
+            </div>
+          
+            <button class="cart_btn" id="cart_btn">
+              <img class="cart_btn_image" src="./images/shopping_cart.png" alt="Cart" srcset="" />
+              <span class="cart-count" id="cart-count">0</span>
+            </button>
+
+
+
+
+
+
+
+
+
+
+       <section class="Testimonials" id="Testimonials">
+        <div class="container">
+            <div class="testimonials_inner">
+                <span class="testimonials-title">Отзывы</span>
+                <div class="testimonials_feedbacks">
+                    <div class="testimonials_slider">
+        <div aria-label="Newest Photos">
+            <div class="carousel2" data-carousel>
+                <ul data-slides class="testimonials_list2">
+                    <li data-active class="slide2">
+                    <div  class="testimonials_slide">
+                        <p>“aСупер пупер костюмы бла бла бла отзыв я пишу сайт крутой отзыв крутой думаю что писать этого мало для карточки о теперь нормально”</p>
+                        <div class="testimonials_rating">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                             <img class="star" src="./images/Star 1.png" alt="">
+                        </div>
+                        <span class="testimonials_author">Беркенов Рахимжан</span>
+                    </div>
+                    <div class="testimonials_slide">
+                        <p>“bСупер пупер костюмы бла бла бла отзыв я пишу сайт крутой отзыв крутой думаю что писать этого мало для карточки о теперь нормально”</p>
+                        <div class="testimonials_rating">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                             <img class="star" src="./images/Star 1.png" alt="">
+                        </div>
+                        <span class="testimonials_author">Беркенов Рахимжан</span>
+                    </div>
+                    <div class="testimonials_slide">
+                        <p>“cСупер пупер костюмы бла бла бла отзыв я пишу сайт крутой отзыв крутой думаю что писать этого мало для карточки о теперь нормально”</p>
+                        <div class="testimonials_rating">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                             <img class="star" src="./images/Star 1.png" alt="">
+                        </div>
+                        <span class="testimonials_author">Беркенов Рахимжан</span>
+                    </div>
+                </li>
+                <li class="slide2">
+                    <div class="testimonials_slide">
+                        <p>“dСупер пупер костюмы бла бла бла отзыв я пишу сайт крутой отзыв крутой думаю что писать этого мало для карточки о теперь нормально”</p>
+                        <div class="testimonials_rating">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                             <img class="star" src="./images/Star 1.png" alt="">
+                        </div>
+                        <span class="testimonials_author">Беркенов Рахимжан</span>
+                    </div>
+                    <div class="testimonials_slide">
+                        <p>“eСупер пупер костюмы бла бла бла отзыв я пишу сайт крутой отзыв крутой думаю что писать этого мало для карточки о теперь нормально”</p>
+                        <div class="testimonials_rating">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                             <img class="star" src="./images/Star 1.png" alt="">
+                        </div>
+                        <span class="testimonials_author">Беркенов Рахимжан</span>
+                    </div>
+                    <div class="testimonials_slide">
+                        <p>“fСупер пупер костюмы бла бла бла отзыв я пишу сайт крутой отзыв крутой думаю что писать этого мало для карточки о теперь нормально”</p>
+                        <div class="testimonials_rating">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                             <img class="star" src="./images/Star 1.png" alt="">
+                        </div>
+                        <span class="testimonials_author">Беркенов Рахимжан</span>
+                    </div>
+                </li>
+                <li class="slide2">
+                    <div class="testimonials_slide">
+                        <p>“gСупер пупер костюмы бла бла бла отзыв я пишу сайт крутой отзыв крутой думаю что писать этого мало для карточки о теперь нормально”</p>
+                        <div class="testimonials_rating">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                             <img class="star" src="./images/Star 1.png" alt="">
+                        </div>
+                        <span class="testimonials_author">Беркенов Рахимжан</span>
+                    </div>
+                    <div class="testimonials_slide">
+                        <p>“hСупер пупер костюмы бла бла бла отзыв я пишу сайт крутой отзыв крутой думаю что писать этого мало для карточки о теперь нормально”</p>
+                        <div class="testimonials_rating">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                             <img class="star" src="./images/Star 1.png" alt="">
+                        </div>
+                        <span class="testimonials_author">Беркенов Рахимжан</span>
+                    </div>
+                    <div class="testimonials_slide">
+                        <p>“iСупер пупер костюмы бла бла бла отзыв я пишу сайт крутой отзыв крутой думаю что писать этого мало для карточки о теперь нормально”</p>
+                        <div class="testimonials_rating">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                            <img class="star" src="./images/Star 1.png" alt="">
+                             <img class="star" src="./images/Star 1.png" alt="">
+                        </div>
+                        <span class="testimonials_author">Беркенов Рахимжан</span>
+                    </div>
+                </li>
+                </ul>
+            <div class="testimonials_slider-controls" style="z-index: 3;">
+                <button class="left-btn testimonials-arrow-left" data-carousel-button="prev"><img src="./images/left-arrow-btn.png" alt=""></button>
+                <button class="right-btn testimonials-arrow-right" data-carousel-button="next"><img src="./images/right-arrow-btn.png" alt=""></button>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+       </section>
+
+
+    
+
+
+
+
+        <footer class="footer_section" id="contact">
+            <div class="container">
+                <div class="footer_columns">
+                <div class="footer_column"><h2>"CaPriz_elit"</h2></div>
+                <div class="footer_column"><p>© 2024. All Rights Reserved</p></div>
+                <div class="footer_column"><a href="https://wa.me/+77717743260"><img class="footer_img whatsapplogo" src="./images/whatsapplogo.png" alt=""></a> <a href="https://www.instagram.com/capriz_elit?igsh=MW8wY2dmbzJkYzhuaQ%3D%3D&utm_source=qr"><img class="footer_img" src="./images/instagramlogo.png" alt=""></a></div>
+                </div>
+            </div>
+        </footer>
+
+
+
     <script src="./scripts/jquery-3.6.0.min.js"></script>
     <script src="./scripts/scripr.js"></script>
     
@@ -65,5 +797,8 @@
     <script>
         AOS.init();
     </script>
+
+    
+    
 </body>
 </html>
